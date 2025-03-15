@@ -1,0 +1,68 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% include "includes/_meta.html" %}
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section" id="red">
+      {% include "includes/_nav.html" %}
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class=" slider_section position-relative">
+      <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="detail-box">
+                    <h1>
+                      A Perfect Learning Center <br />
+                      <span>
+                        For Your Success
+                      </span>
+                    </h1>
+                    <p>
+                      It is a long established fact that a reader will be distracted
+                      by the readable content of a page when looking at its layout.
+                      The point of using Lorem Ipsum is that it has a more-or-less
+                      normal distribution of letters, as
+                    </p>
+                    <div class="btn-box">
+                      <a href="" class="btn-1">
+                        Read More
+                      </a>
+                      <a href="contact.html" class="btn-2">
+                        Contact us
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+
+  <!-- offer section -->
+  {% block content %}
+  
+  {% endblock %}
+  <!-- end info_section -->
+
+  <!-- footer section -->
+  {% include "includes/_footer.html" %}
+  <!-- footer section -->
+
+</body>
+
+</html>
