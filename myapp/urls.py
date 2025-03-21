@@ -9,7 +9,7 @@ urlpatterns = [
     path('program', views.program, name='program'),
     path('register', views.register, name='register'),
     path('indexx', views.indexx, name='indexx'),
-    path('reset', views.reset, name='reset'),
+    # path('reset', views.reset, name='reset'),
     path('user-dash', views.dash, name='dash'),
     path('logout', views.logout, name='logout'),
 ]
